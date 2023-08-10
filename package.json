@@ -6,7 +6,7 @@
     "email": "pedro.oliveira@cequell.dev"
   },
   "private": false,
-  "version": "0.1.1",
+  "version": "0.1.2",
   "type": "module",
   "main": "./dist/luis-sacilotto-1.es.js",
   "types": "./dist/luis-sacilotto-1.d.ts",
