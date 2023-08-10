@@ -4,7 +4,7 @@ import dts from "vite-plugin-dts";
 export default defineConfig({
     build: {
         lib: {
-            entry: "src/luis-sacilotto-1.ts",
+            entry: "src/luiz-sacilotto-1.ts",
             formats: ["es"],
         },
         rollupOptions: {

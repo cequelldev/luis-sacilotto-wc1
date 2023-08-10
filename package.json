@@ -1,15 +1,15 @@
 {
-  "name": "@cequelldev/luis-sacilotto-1",
-  "description": "A webcomponent to display a new originally generated frame based on Luis Sacilotto works",
+  "name": "@cequelldev/luiz-sacilotto-1",
+  "description": "A webcomponent to display a new originally generated frame based on Luiz Sacilotto works",
   "author": {
     "name": "Pedro \"Darth Çeqüella\" de Oliveira",
     "email": "pedro.oliveira@cequell.dev"
   },
   "private": false,
-  "version": "0.1.2",
+  "version": "0.1.0",
   "type": "module",
-  "main": "./dist/luis-sacilotto-1.es.js",
-  "types": "./dist/luis-sacilotto-1.d.ts",
+  "main": "./dist/luiz-sacilotto-1.es.js",
+  "types": "./dist/luiz-sacilotto-1.d.ts",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

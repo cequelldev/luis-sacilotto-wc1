@@ -7,7 +7,7 @@
 First install the dependencies
 
 ```bash
-npm i lit @cequelldev/luis-sacilotto-1
+npm i lit @cequelldev/luiz-sacilotto-1
 ```
 
 ## How to use
@@ -36,12 +36,12 @@ Parameters:
 You can resize the component by setting the width and height through css with:
 
 ```css
-luis-sacilotto-1 {
-    --luis-sacilotto-1-size: 500px;
+luiz-sacilotto-1 {
+    --luiz-sacilotto-1-size: 500px;
 }
 ```
 
 ## Recommendations
 
-It's recommendend that the **renderArea** parameter is set to the doubleof the  **--luis-sacilotto-1-size** css variable. It will improve the resolution of the final image.
+It's recommendend that the **renderArea** parameter is set to the doubleof the  **--luiz-sacilotto-1-size** css variable. It will improve the resolution of the final image.
 

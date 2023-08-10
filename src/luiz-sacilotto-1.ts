@@ -105,8 +105,8 @@ export class LuizSacilotto1 extends LitElement {
      */
     static override styles = css`
         #base {
-            width: var(--luis-sacilotto-1-size, 1000px);
-            height: var(--luis-sacilotto-1-size, 1000px);
+            width: var(--luiz-sacilotto-1-size, 1000px);
+            height: var(--luiz-sacilotto-1-size, 1000px);
         }
     `;
 
