@@ -5,13 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + Lit + TS</title>
     <script type="module" src="/src/luis-sacilotto-1.ts"></script>
+
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+
+      luis-sacilotto-1 {
+        --luis-sacilotto-1-size: 500px;
+      }
+    </style>
   </head>
   <body>
-    <luis-sacilotto-1 
+    <luiz-sacilotto-1 
+      renderSize="1000"
       sideCount="10"
       angle="0.25" 
       startAngle="0.0"
-      moduleMargin="2"
-      invert></luis-sacilotto-1>
+      moduleMargin="2"></luiz-sacilotto-1>
+      
+    <div>
+      <label for="sideCount">Side Count</label>
+      <input id="sideCount" type="number" value="10"></input>
+    </div>
+
+    <div>
+      <label for="angle">Angle</label>
+      <input id="angle" type="range" min="0.0" max="2.0" step="0.1" value="0.25"></input>
+    </div>
+
+    <div>
+      <label for="startAngle">Start Angle</label>
+      <input id="startAngle" type="range" min="0.0" max="2.0" step="0.1" value="0.25"></input>
+    </div>
+
+    <div>
+      <label for="invert">Invert</label>
+      <input id="invert" type="checkbox" value="false"></input>
+    </div>
+
+    <script>
+      (() => {
+        let frame = document.querySelector("luiz-sacilotto-1");
+        
+        let sideCount = document.getElementById("sideCount");
+        let angle = document.getElementById("angle");
+        let startAngle = document.getElementById("startAngle");
+        let invert = document.getElementById("invert");
+
+        sideCount.addEventListener("change", (e) => {
+          let target = e.target;
+          let value = target.value;
+          frame.sideCount = value;
+        });
+
+        angle.addEventListener("change", (e) => {
+          let target = e.target;
+          let value = target.value;
+          frame.angle = value;
+        });
+
+        startAngle.addEventListener("change", (e) => {
+          let target = e.target;
+          let value = target.value;
+          frame.startAngle = value;
+        });
+
+        invert.addEventListener("change", (e) => {
+          let target = e.target;
+          let value = target.checked;
+          frame.invert = value;
+        });
+      })();
+    </script>
   </body>
 </html>
